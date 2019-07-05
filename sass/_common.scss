@@ -1,0 +1,33 @@
+/*================================================
+            common
+==================================================*/
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 2;
+    letter-spacing: 0.1em;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.inner {
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+p {
+    text-align: justify;
+    font-size: 15px;
+}

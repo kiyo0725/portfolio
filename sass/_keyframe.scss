@@ -1,0 +1,274 @@
+/*================================================
+            @keyframes
+==================================================*/
+@keyframes scroll {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes htmlLeft {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    15% {
+        transform: rotate(0deg);
+    }
+
+    18% {
+        transform: rotate(60deg);
+    }
+
+    100% {
+        transform: rotate(60deg);
+    }
+}
+
+@keyframes htmlRight {
+    0% {
+        transform: rotate(0deg);
+        background: #ffdece;
+    }
+
+    15% {
+        transform: rotate(180deg);
+        background: #ffdece;
+    }
+
+    15.01% {
+        transform: rotate(360deg);
+        background: #ff6310;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        background: #ff6310;
+    }
+}
+
+@keyframes cssLeft {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    15% {
+        transform: rotate(0deg);
+    }
+
+    18% {
+        transform: rotate(60deg);
+    }
+
+    100% {
+        transform: rotate(60deg);
+    }
+}
+
+@keyframes cssRight {
+    0% {
+        transform: rotate(0deg);
+        background: #ffdece;
+    }
+
+    15% {
+        transform: rotate(180deg);
+        background: #ffdece;
+    }
+
+    15.01% {
+        transform: rotate(360deg);
+        background: #048eb7;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        background: #048eb7;
+    }
+}
+
+@keyframes javascriptRight {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    15% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes jqueryLeft {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    15% {
+        transform: rotate(0deg);
+    }
+
+    18% {
+        transform: rotate(60deg);
+    }
+
+    100% {
+        transform: rotate(60deg);
+    }
+}
+
+@keyframes jqueryRight {
+    0% {
+        transform: rotate(0deg);
+        background: #ffdece;
+    }
+
+    15% {
+        transform: rotate(180deg);
+        background: #ffdece;
+    }
+
+    15.01% {
+        transform: rotate(360deg);
+        background: #1068AD;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        background: #1068AD;
+    }
+}
+
+@keyframes gulpRight {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    15% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+
+@keyframes sassRight {
+    0% {
+        transform: rotate(0deg);
+        background: #ffdece;
+    }
+
+    15% {
+        transform: rotate(180deg);
+        background: #ffdece;
+    }
+
+    15.00001% {
+        transform: rotate(360deg);
+        background: #ce6399;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        background: #ce6399;
+    }
+}
+
+
+@keyframes photoshopRight {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    15% {
+        transform: rotate(120deg);
+    }
+
+    100% {
+        transform: rotate(120deg);
+    }
+}
+
+
+
+
+@keyframes illustratorRight {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    15% {
+        transform: rotate(120deg);
+    }
+
+    100% {
+        transform: rotate(120deg);
+    }
+}
+
+
+@keyframes adobexdRight {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    15% {
+        transform: rotate(120deg);
+    }
+
+    100% {
+        transform: rotate(120deg);
+    }
+}
+
+@keyframes wordpressLeft {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    15% {
+        transform: rotate(0deg);
+    }
+
+    18% {
+        transform: rotate(30deg);
+    }
+
+    100% {
+        transform: rotate(30deg);
+    }
+}
+
+@keyframes wordpressRight {
+    0% {
+        transform: rotate(0deg);
+        background: #ffdece;
+    }
+
+    15% {
+        transform: rotate(180deg);
+        background: #ffdece;
+    }
+
+    15.01% {
+        transform: rotate(360deg);
+        background: #176d90;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        background: #176d90;
+    }
+}

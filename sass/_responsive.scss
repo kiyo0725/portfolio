@@ -1,0 +1,306 @@
+/*================================================
+            responsive
+==================================================*/
+@media screen and (max-width : 768px) {
+    p {
+        font-size: 14px;
+    }
+
+    //header
+    header {
+        display: none;
+    }
+
+    .spNav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 70px;
+        z-index: 7;
+        background-color: #000;
+        box-shadow: 0px 8px 20px -20px rgba(0, 0, 0, 0.89);
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+
+            li {
+                flex-grow: 1;
+
+                &.current {
+                    background-color: $hoverColor;
+
+                    a {
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+
+                a {
+                    text-align: center;
+                    display: block;
+                    padding: 21px 0;
+                    position: relative;
+                    font-weight: bold;
+                    font-size: 14px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    // main
+    main {
+        margin-left: 0;
+
+        section {
+            padding: 0 10px;
+        }
+
+        section.home {
+            .homeTitle {
+
+                h1 {
+                    font-size: 40px;
+                }
+
+                p {
+                    font-size: 30px;
+                }
+            }
+        }
+
+        // section.work
+        section.work {
+
+            .mockupContainer1,
+            .mockupContainer2,
+            .mockupContainer3 {
+                .mockup {
+                    .mockupPc {
+                        img {
+                            width: 100%;
+                        }
+
+                        .mockupImage {
+                            width: 95%;
+                        }
+                    }
+
+                    .mockupSp {
+                        display: none;
+                    }
+                }
+
+                .mockupText {
+                    padding: 0;
+
+                    .moreButton1,
+                    .moreButton2,
+                    .moreButton3 {
+                        a {
+                            padding: 10px 20px;
+                            font-size: 14px;
+                            border: solid $textColor 2px;
+                        }
+                    }
+
+                    a {
+                        br.sp_br {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            .modalContents1,
+            .modalContents2,
+            .modalContents3 {
+                width: 90%;
+
+                .modalTitle {
+                    text-align: center;
+
+                    a {
+                        margin-bottom: 0;
+                        font-size: 14px;
+                        padding: 0;
+                        text-align: left;
+
+                        br.sp_br {
+                            display: block;
+                        }
+                    }
+                }
+
+                .modalText {
+
+                    p {
+                        padding: 10px 0;
+                        font-size: 14px;
+                    }
+
+                    ul {
+                        padding: 20px 0 0;
+
+                        img {
+                            width: 35px;
+                        }
+
+                        li {
+                            width: calc(100%/5);
+
+                            &.gulp {
+                                img {
+                                    width: 30px;
+                                }
+                            }
+                        }
+
+                        li.jquery {
+                            img {
+                                width: 53px;
+                            }
+                        }
+                    }
+
+                    a {
+                        font-size: 14px;
+
+                        br.sp_br {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            .masking1,
+            .masking2,
+            .masking3 {
+                .closeButton {
+                    top: 2%;
+                    right: 5%;
+
+                    i {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+
+        // section.profile
+        section.profile {
+            .profileText {
+
+                h5 {
+                    text-align: center;
+                }
+
+                p {
+                    font-size: 14px;
+                    padding: 10px;
+                }
+
+                dl {
+
+                    dt,
+                    dd {
+                        width: 100%;
+                        font-size: 14px;
+                    }
+
+                    dd {
+                        margin-bottom: 50px;
+
+                        &:last-of-type {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        // section.skill
+        section.skill {
+            .skillContents {
+                .skillContent {
+                    width: 45%;
+
+                    .circle {
+                        width: 150px;
+                        height: 150px;
+
+                        .circleLeft {
+                            width: 75px;
+                            height: 150px;
+                        }
+
+                        .circleRight {
+                            width: 75px;
+                            height: 150px;
+                        }
+
+                        .circleInner {
+                            width: 100px;
+                            height: 100px;
+
+                            .circleImage {
+                                width: 50px;
+                            }
+
+                            p {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+
+                    .jquery {
+                        .circleInner {
+                            .circleImage {
+
+                                width: 75px;
+                            }
+                        }
+                    }
+
+                    .gulp {
+                        .circleInner {
+                            .circleImage {
+
+                                width: 35px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // section.contact
+        section.contact {
+            .submit-btn {
+                input {
+                    width: 80%;
+                }
+            }
+
+
+            input {
+                width: 80%;
+            }
+
+            textarea {
+                width: 80%;
+            }
+        }
+    }
+
+    // footer
+    footer {
+        margin-left: 0;
+    }
+}

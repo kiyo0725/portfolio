@@ -1,0 +1,1236 @@
+/*================================================
+            common
+==================================================*/
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 2;
+  letter-spacing: 0.1em;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.inner {
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+p {
+  text-align: justify;
+  font-size: 15px;
+}
+
+/*================================================
+            header
+==================================================*/
+header {
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: #000;
+  z-index: 7;
+}
+
+header nav li {
+  line-height: 1.7;
+}
+
+header nav li.current {
+  background-color: #5268b1;
+}
+
+header nav li.current a:hover {
+  color: #fff;
+}
+
+header nav li a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 20px 0;
+}
+
+header nav li a:hover {
+  color: #5268b1;
+  transition: 0.7s;
+}
+
+header nav li i {
+  padding: 0 25px;
+  width: 65px;
+}
+
+header .button {
+  color: #fff;
+  writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  position: absolute;
+  top: 65px;
+  left: 180px;
+  background-color: #000;
+  padding: 10px;
+  cursor: pointer;
+}
+
+header .button i {
+  margin-bottom: 5px;
+}
+
+.spNav {
+  display: none;
+}
+
+/*================================================
+            main
+==================================================*/
+main {
+  margin-left: 200px;
+}
+
+main section {
+  padding: 0 70px;
+  margin-bottom: 100px;
+}
+
+main section h2 {
+  text-align: center;
+  font-size: 25px;
+}
+
+main section h4 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+main section.home {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+main section.home .homeTitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-shadow: 5px 4px 5px rgba(0, 0, 0, 0.6);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+main section.home .homeTitle h1 {
+  font-size: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .2em;
+}
+
+main section.home .homeTitle p {
+  text-align: center;
+  font-size: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+  letter-spacing: .2em;
+  display: inline-block;
+}
+
+main section.home a.scroll {
+  padding-top: 90px;
+  color: #fff;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+}
+
+main section.home a.scroll span {
+  position: absolute;
+  top: 0;
+  left: 42%;
+  width: 30px;
+  height: 30px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  transform: rotate(-45deg) translateX(-50%);
+  animation: scroll 2s infinite;
+  opacity: 0;
+  box-sizing: border-box;
+}
+
+main section.home a.scroll span:nth-of-type(1) {
+  animation-delay: 0s;
+}
+
+main section.home a.scroll span:nth-of-type(2) {
+  top: 15px;
+  animation-delay: .15s;
+}
+
+main section.home a.scroll span:nth-of-type(3) {
+  top: 30px;
+  animation-delay: .3s;
+}
+
+main section.work .mockupContainer1,
+main section.work .mockupContainer2,
+main section.work .mockupContainer3 {
+  margin-bottom: 100px;
+  border: 1px dotted #ccc;
+  padding: 20px;
+  position: relative;
+}
+
+main section.work .mockupContainer1 .mockup,
+main section.work .mockupContainer2 .mockup,
+main section.work .mockupContainer3 .mockup {
+  position: relative;
+}
+
+main section.work .mockupContainer1 .mockup .mockupPc,
+main section.work .mockupContainer2 .mockup .mockupPc,
+main section.work .mockupContainer3 .mockup .mockupPc {
+  position: relative;
+}
+
+main section.work .mockupContainer1 .mockup .mockupPc img,
+main section.work .mockupContainer2 .mockup .mockupPc img,
+main section.work .mockupContainer3 .mockup .mockupPc img {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+}
+
+main section.work .mockupContainer1 .mockup .mockupPc .mockupImage,
+main section.work .mockupContainer2 .mockup .mockupPc .mockupImage,
+main section.work .mockupContainer3 .mockup .mockupPc .mockupImage {
+  overflow-y: scroll;
+  position: absolute;
+  top: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  height: 68%;
+}
+
+main section.work .mockupContainer1 .mockup .mockupPc .mockupImage img,
+main section.work .mockupContainer2 .mockup .mockupPc .mockupImage img,
+main section.work .mockupContainer3 .mockup .mockupPc .mockupImage img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+main section.work .mockupContainer1 .mockup .mockupSp,
+main section.work .mockupContainer2 .mockup .mockupSp,
+main section.work .mockupContainer3 .mockup .mockupSp {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+}
+
+main section.work .mockupContainer1 .mockup .mockupSp img,
+main section.work .mockupContainer2 .mockup .mockupSp img,
+main section.work .mockupContainer3 .mockup .mockupSp img {
+  display: block;
+  width: 13vw;
+  height: auto;
+}
+
+main section.work .mockupContainer1 .mockup .mockupSp .mockupImage,
+main section.work .mockupContainer2 .mockup .mockupSp .mockupImage,
+main section.work .mockupContainer3 .mockup .mockupSp .mockupImage {
+  overflow-y: scroll;
+  position: absolute;
+  top: 13%;
+  left: 9%;
+  width: 84%;
+  height: 72%;
+}
+
+main section.work .mockupContainer1 .mockup .mockupSp .mockupImage::-webkit-scrollbar,
+main section.work .mockupContainer2 .mockup .mockupSp .mockupImage::-webkit-scrollbar,
+main section.work .mockupContainer3 .mockup .mockupSp .mockupImage::-webkit-scrollbar {
+  display: none;
+}
+
+main section.work .mockupContainer1 .mockup .mockupSp .mockupImage img,
+main section.work .mockupContainer2 .mockup .mockupSp .mockupImage img,
+main section.work .mockupContainer3 .mockup .mockupSp .mockupImage img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+main section.work .mockupContainer1 .mockupText,
+main section.work .mockupContainer2 .mockupText,
+main section.work .mockupContainer3 .mockupText {
+  margin-top: 80px;
+  padding: 20px;
+}
+
+main section.work .mockupContainer1 .mockupText h3,
+main section.work .mockupContainer2 .mockupText h3,
+main section.work .mockupContainer3 .mockupText h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+main section.work .mockupContainer1 .mockupText a,
+main section.work .mockupContainer2 .mockupText a,
+main section.work .mockupContainer3 .mockupText a {
+  color: rgba(82, 104, 177, 0.8);
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+main section.work .mockupContainer1 .mockupText a br.sp_br,
+main section.work .mockupContainer2 .mockupText a br.sp_br,
+main section.work .mockupContainer3 .mockupText a br.sp_br {
+  display: none;
+}
+
+main section.work .mockupContainer1 .mockupText a:hover,
+main section.work .mockupContainer2 .mockupText a:hover,
+main section.work .mockupContainer3 .mockupText a:hover {
+  text-decoration: underline;
+}
+
+main section.work .mockupContainer1 .mockupText a i,
+main section.work .mockupContainer2 .mockupText a i,
+main section.work .mockupContainer3 .mockupText a i {
+  margin-left: 5px;
+}
+
+main section.work .mockupContainer1 .mockupText p,
+main section.work .mockupContainer2 .mockupText p,
+main section.work .mockupContainer3 .mockupText p {
+  margin-bottom: 10px;
+}
+
+main section.work .mockupContainer1 .mockupText .moreButton1,
+main section.work .mockupContainer1 .mockupText .moreButton2,
+main section.work .mockupContainer1 .mockupText .moreButton3,
+main section.work .mockupContainer2 .mockupText .moreButton1,
+main section.work .mockupContainer2 .mockupText .moreButton2,
+main section.work .mockupContainer2 .mockupText .moreButton3,
+main section.work .mockupContainer3 .mockupText .moreButton1,
+main section.work .mockupContainer3 .mockupText .moreButton2,
+main section.work .mockupContainer3 .mockupText .moreButton3 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+main section.work .mockupContainer1 .mockupText .moreButton1 a,
+main section.work .mockupContainer1 .mockupText .moreButton2 a,
+main section.work .mockupContainer1 .mockupText .moreButton3 a,
+main section.work .mockupContainer2 .mockupText .moreButton1 a,
+main section.work .mockupContainer2 .mockupText .moreButton2 a,
+main section.work .mockupContainer2 .mockupText .moreButton3 a,
+main section.work .mockupContainer3 .mockupText .moreButton1 a,
+main section.work .mockupContainer3 .mockupText .moreButton2 a,
+main section.work .mockupContainer3 .mockupText .moreButton3 a {
+  display: inline-block;
+  border: solid rgba(82, 104, 177, 0.8) 3px;
+  font-size: 18px;
+  color: rgba(82, 104, 177, 0.8);
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+
+main section.work .mockupContainer1 .mockupText .moreButton1 a:hover,
+main section.work .mockupContainer1 .mockupText .moreButton2 a:hover,
+main section.work .mockupContainer1 .mockupText .moreButton3 a:hover,
+main section.work .mockupContainer2 .mockupText .moreButton1 a:hover,
+main section.work .mockupContainer2 .mockupText .moreButton2 a:hover,
+main section.work .mockupContainer2 .mockupText .moreButton3 a:hover,
+main section.work .mockupContainer3 .mockupText .moreButton1 a:hover,
+main section.work .mockupContainer3 .mockupText .moreButton2 a:hover,
+main section.work .mockupContainer3 .mockupText .moreButton3 a:hover {
+  background-color: rgba(82, 104, 177, 0.8);
+  color: #fff;
+  transition: .5s;
+}
+
+main section.work .masking1,
+main section.work .masking2,
+main section.work .masking3 {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+main section.work .masking1 .closeButton,
+main section.work .masking2 .closeButton,
+main section.work .masking3 .closeButton {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  color: #fff;
+  cursor: pointer;
+}
+
+main section.work .masking1 .closeButton i,
+main section.work .masking2 .closeButton i,
+main section.work .masking3 .closeButton i {
+  font-size: 40px;
+}
+
+main section.work .modalContents1,
+main section.work .modalContents2,
+main section.work .modalContents3 {
+  max-width: 800px;
+  background-color: #fff;
+  position: fixed;
+  top: 8%;
+  left: 50%;
+  width: 100%;
+  height: 92%;
+  transform: translateX(-50%);
+  overflow-y: auto;
+  z-index: 15;
+  display: none;
+}
+
+main section.work .modalContents1 .modalImage img,
+main section.work .modalContents2 .modalImage img,
+main section.work .modalContents3 .modalImage img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+main section.work .modalContents1 .modalTitle h3,
+main section.work .modalContents2 .modalTitle h3,
+main section.work .modalContents3 .modalTitle h3 {
+  font-size: 25px;
+  padding: 20px 40px 10px;
+}
+
+main section.work .modalContents1 .modalTitle a,
+main section.work .modalContents2 .modalTitle a,
+main section.work .modalContents3 .modalTitle a {
+  color: rgba(82, 104, 177, 0.8);
+  margin-bottom: 20px;
+  display: inline-block;
+  padding: 0 40px;
+}
+
+main section.work .modalContents1 .modalTitle a br.sp_br,
+main section.work .modalContents2 .modalTitle a br.sp_br,
+main section.work .modalContents3 .modalTitle a br.sp_br {
+  display: none;
+}
+
+main section.work .modalContents1 .modalTitle a:hover,
+main section.work .modalContents2 .modalTitle a:hover,
+main section.work .modalContents3 .modalTitle a:hover {
+  text-decoration: underline;
+}
+
+main section.work .modalContents1 .modalTitle a i,
+main section.work .modalContents2 .modalTitle a i,
+main section.work .modalContents3 .modalTitle a i {
+  margin-left: 5px;
+}
+
+main section.work .modalContents1 .modalText,
+main section.work .modalContents2 .modalText,
+main section.work .modalContents3 .modalText {
+  padding: 20px;
+}
+
+main section.work .modalContents1 .modalText h4,
+main section.work .modalContents2 .modalText h4,
+main section.work .modalContents3 .modalText h4 {
+  padding: 10px 0;
+  border-bottom: 1px dotted #c1c1c1;
+  margin-bottom: 0;
+}
+
+main section.work .modalContents1 .modalText p,
+main section.work .modalContents2 .modalText p,
+main section.work .modalContents3 .modalText p {
+  font-size: 14px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+main section.work .modalContents1 .modalText ul,
+main section.work .modalContents2 .modalText ul,
+main section.work .modalContents3 .modalText ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px 10px;
+}
+
+main section.work .modalContents1 .modalText ul li,
+main section.work .modalContents2 .modalText ul li,
+main section.work .modalContents3 .modalText ul li {
+  width: 13%;
+  text-align: center;
+}
+
+main section.work .modalContents1 .modalText ul li.jquery img,
+main section.work .modalContents2 .modalText ul li.jquery img,
+main section.work .modalContents3 .modalText ul li.jquery img {
+  width: 80px;
+}
+
+main section.work .modalContents1 .modalText ul li.gulp img,
+main section.work .modalContents2 .modalText ul li.gulp img,
+main section.work .modalContents3 .modalText ul li.gulp img {
+  width: 45px;
+}
+
+main section.work .modalContents1 .modalText ul img,
+main section.work .modalContents2 .modalText ul img,
+main section.work .modalContents3 .modalText ul img {
+  width: 60px;
+  height: auto;
+}
+
+main section.work .modalContents1 .modalText a,
+main section.work .modalContents2 .modalText a,
+main section.work .modalContents3 .modalText a {
+  color: rgba(82, 104, 177, 0.8);
+  display: inline-block;
+  padding: 10px;
+}
+
+main section.work .modalContents1 .modalText a i,
+main section.work .modalContents2 .modalText a i,
+main section.work .modalContents3 .modalText a i {
+  margin-left: 5px;
+}
+
+main section.work .modalContents1 .modalText a br.sp_br,
+main section.work .modalContents2 .modalText a br.sp_br,
+main section.work .modalContents3 .modalText a br.sp_br {
+  display: none;
+}
+
+main section.profile .profileText h5 {
+  font-size: 20px;
+  border-bottom: 1px dotted #ccc;
+  margin: 30px 0 10px;
+}
+
+main section.profile .profileText p {
+  font-size: 15px;
+  padding: 10px 20px;
+}
+
+main section.profile .profileText dl {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+main section.profile .profileText dl dt {
+  font-size: 15px;
+  width: 30%;
+}
+
+main section.profile .profileText dl dd {
+  font-size: 15px;
+  width: 65%;
+  margin: 20px 0;
+}
+
+main section.profile .profileText dl dd img {
+  width: 50px;
+  height: auto;
+  margin-right: 40px;
+}
+
+main section.skill .skillContents {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+main section.skill .skillContents .skillContent {
+  width: 30%;
+  margin-bottom: 100px;
+}
+
+main section.skill .skillContents .skillContent img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+main section.skill .skillContents .skillContent .circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+}
+
+main section.skill .skillContents .skillContent .circle .circleLeft {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 200px;
+  background: #ffdece;
+  transform-origin: right 50%;
+  z-index: 2;
+}
+
+main section.skill .skillContents .skillContent .circle .circleRight {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100px;
+  height: 200px;
+  background: #ffdece;
+  transform-origin: left 50%;
+  z-index: 3;
+}
+
+main section.skill .skillContents .skillContent .circle .circleInner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 4;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+main section.skill .skillContents .skillContent .circle .circleInner .circleImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75px;
+}
+
+main section.skill .skillContents .skillContent .circle .circleInner p {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+main section.skill .skillContents .skillContent .circle .circleText {
+  display: none;
+  z-index: 5;
+  position: absolute;
+  font-size: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: default;
+}
+
+main section.skill .skillContents .skillContent .html {
+  background-color: #ff6310;
+}
+
+main section.skill .skillContents .skillContent .css {
+  background-color: #048eb7;
+}
+
+main section.skill .skillContents .skillContent .javascript {
+  background-color: #ebd000;
+}
+
+main section.skill .skillContents .skillContent .jquery {
+  background-color: #1068AD;
+}
+
+main section.skill .skillContents .skillContent .jquery .circleInner .circleImage {
+  width: 100px;
+}
+
+main section.skill .skillContents .skillContent .gulp {
+  background-color: #eb4a4b;
+}
+
+main section.skill .skillContents .skillContent .gulp .circleInner .circleImage {
+  width: 50px;
+}
+
+main section.skill .skillContents .skillContent .sass {
+  background-color: #ce6399;
+}
+
+main section.skill .skillContents .skillContent .photoshop {
+  background-color: #00cafc;
+}
+
+main section.skill .skillContents .skillContent .illustrator {
+  background-color: #ea7d2e;
+}
+
+main section.skill .skillContents .skillContent .adobexd {
+  background-color: #ee3bb2;
+}
+
+main section.skill .skillContents .skillContent .wordpress {
+  background-color: #176d90;
+}
+
+main section.contact form {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+main section.contact p {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+main section.contact p span {
+  color: #f00;
+}
+
+main section.contact input,
+main section.contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+main section.contact .submit-btn input {
+  padding: 10px 40px;
+  border: none;
+  color: #fff;
+  background-color: #5268b1;
+  font-size: 30px;
+  box-shadow: 3px 5px 5px #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 30%;
+}
+
+main section.contact .submit-btn input:active {
+  position: relative;
+  border: none;
+  box-shadow: none;
+  top: 3px;
+}
+
+/*================================================
+            footer
+==================================================*/
+footer {
+  margin-left: 200px;
+}
+
+footer .copy {
+  background-color: #151515;
+  text-align: center;
+  color: #c8c8c8;
+  padding: 10px 0;
+  font-size: 12px;
+}
+
+/*================================================
+            responsive
+==================================================*/
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 14px;
+  }
+  header {
+    display: none;
+  }
+  .spNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 70px;
+    z-index: 7;
+    background-color: #000;
+    box-shadow: 0px 8px 20px -20px rgba(0, 0, 0, 0.89);
+  }
+  .spNav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .spNav ul li {
+    flex-grow: 1;
+  }
+  .spNav ul li.current {
+    background-color: #5268b1;
+  }
+  .spNav ul li.current a:hover {
+    color: #fff;
+  }
+  .spNav ul li a {
+    text-align: center;
+    display: block;
+    padding: 21px 0;
+    position: relative;
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+  }
+  main {
+    margin-left: 0;
+  }
+  main section {
+    padding: 0 10px;
+  }
+  main section.home .homeTitle h1 {
+    font-size: 40px;
+  }
+  main section.home .homeTitle p {
+    font-size: 30px;
+  }
+  main section.work .mockupContainer1 .mockup .mockupPc img,
+  main section.work .mockupContainer2 .mockup .mockupPc img,
+  main section.work .mockupContainer3 .mockup .mockupPc img {
+    width: 100%;
+  }
+  main section.work .mockupContainer1 .mockup .mockupPc .mockupImage,
+  main section.work .mockupContainer2 .mockup .mockupPc .mockupImage,
+  main section.work .mockupContainer3 .mockup .mockupPc .mockupImage {
+    width: 95%;
+  }
+  main section.work .mockupContainer1 .mockup .mockupSp,
+  main section.work .mockupContainer2 .mockup .mockupSp,
+  main section.work .mockupContainer3 .mockup .mockupSp {
+    display: none;
+  }
+  main section.work .mockupContainer1 .mockupText,
+  main section.work .mockupContainer2 .mockupText,
+  main section.work .mockupContainer3 .mockupText {
+    padding: 0;
+  }
+  main section.work .mockupContainer1 .mockupText .moreButton1 a,
+  main section.work .mockupContainer1 .mockupText .moreButton2 a,
+  main section.work .mockupContainer1 .mockupText .moreButton3 a,
+  main section.work .mockupContainer2 .mockupText .moreButton1 a,
+  main section.work .mockupContainer2 .mockupText .moreButton2 a,
+  main section.work .mockupContainer2 .mockupText .moreButton3 a,
+  main section.work .mockupContainer3 .mockupText .moreButton1 a,
+  main section.work .mockupContainer3 .mockupText .moreButton2 a,
+  main section.work .mockupContainer3 .mockupText .moreButton3 a {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: solid rgba(82, 104, 177, 0.8) 2px;
+  }
+  main section.work .mockupContainer1 .mockupText a br.sp_br,
+  main section.work .mockupContainer2 .mockupText a br.sp_br,
+  main section.work .mockupContainer3 .mockupText a br.sp_br {
+    display: block;
+  }
+  main section.work .modalContents1,
+  main section.work .modalContents2,
+  main section.work .modalContents3 {
+    width: 90%;
+  }
+  main section.work .modalContents1 .modalTitle,
+  main section.work .modalContents2 .modalTitle,
+  main section.work .modalContents3 .modalTitle {
+    text-align: center;
+  }
+  main section.work .modalContents1 .modalTitle a,
+  main section.work .modalContents2 .modalTitle a,
+  main section.work .modalContents3 .modalTitle a {
+    margin-bottom: 0;
+    font-size: 14px;
+    padding: 0;
+    text-align: left;
+  }
+  main section.work .modalContents1 .modalTitle a br.sp_br,
+  main section.work .modalContents2 .modalTitle a br.sp_br,
+  main section.work .modalContents3 .modalTitle a br.sp_br {
+    display: block;
+  }
+  main section.work .modalContents1 .modalText p,
+  main section.work .modalContents2 .modalText p,
+  main section.work .modalContents3 .modalText p {
+    padding: 10px 0;
+    font-size: 14px;
+  }
+  main section.work .modalContents1 .modalText ul,
+  main section.work .modalContents2 .modalText ul,
+  main section.work .modalContents3 .modalText ul {
+    padding: 20px 0 0;
+  }
+  main section.work .modalContents1 .modalText ul img,
+  main section.work .modalContents2 .modalText ul img,
+  main section.work .modalContents3 .modalText ul img {
+    width: 35px;
+  }
+  main section.work .modalContents1 .modalText ul li,
+  main section.work .modalContents2 .modalText ul li,
+  main section.work .modalContents3 .modalText ul li {
+    width: calc(100%/5);
+  }
+  main section.work .modalContents1 .modalText ul li.gulp img,
+  main section.work .modalContents2 .modalText ul li.gulp img,
+  main section.work .modalContents3 .modalText ul li.gulp img {
+    width: 30px;
+  }
+  main section.work .modalContents1 .modalText ul li.jquery img,
+  main section.work .modalContents2 .modalText ul li.jquery img,
+  main section.work .modalContents3 .modalText ul li.jquery img {
+    width: 53px;
+  }
+  main section.work .modalContents1 .modalText a,
+  main section.work .modalContents2 .modalText a,
+  main section.work .modalContents3 .modalText a {
+    font-size: 14px;
+  }
+  main section.work .modalContents1 .modalText a br.sp_br,
+  main section.work .modalContents2 .modalText a br.sp_br,
+  main section.work .modalContents3 .modalText a br.sp_br {
+    display: block;
+  }
+  main section.work .masking1 .closeButton,
+  main section.work .masking2 .closeButton,
+  main section.work .masking3 .closeButton {
+    top: 2%;
+    right: 5%;
+  }
+  main section.work .masking1 .closeButton i,
+  main section.work .masking2 .closeButton i,
+  main section.work .masking3 .closeButton i {
+    font-size: 30px;
+  }
+  main section.profile .profileText h5 {
+    text-align: center;
+  }
+  main section.profile .profileText p {
+    font-size: 14px;
+    padding: 10px;
+  }
+  main section.profile .profileText dl dt,
+  main section.profile .profileText dl dd {
+    width: 100%;
+    font-size: 14px;
+  }
+  main section.profile .profileText dl dd {
+    margin-bottom: 50px;
+  }
+  main section.profile .profileText dl dd:last-of-type {
+    margin-bottom: 0;
+  }
+  main section.skill .skillContents .skillContent {
+    width: 45%;
+  }
+  main section.skill .skillContents .skillContent .circle {
+    width: 150px;
+    height: 150px;
+  }
+  main section.skill .skillContents .skillContent .circle .circleLeft {
+    width: 75px;
+    height: 150px;
+  }
+  main section.skill .skillContents .skillContent .circle .circleRight {
+    width: 75px;
+    height: 150px;
+  }
+  main section.skill .skillContents .skillContent .circle .circleInner {
+    width: 100px;
+    height: 100px;
+  }
+  main section.skill .skillContents .skillContent .circle .circleInner .circleImage {
+    width: 50px;
+  }
+  main section.skill .skillContents .skillContent .circle .circleInner p {
+    font-size: 16px;
+  }
+  main section.skill .skillContents .skillContent .jquery .circleInner .circleImage {
+    width: 75px;
+  }
+  main section.skill .skillContents .skillContent .gulp .circleInner .circleImage {
+    width: 35px;
+  }
+  main section.contact .submit-btn input {
+    width: 80%;
+  }
+  main section.contact input {
+    width: 80%;
+  }
+  main section.contact textarea {
+    width: 80%;
+  }
+  footer {
+    margin-left: 0;
+  }
+}
+
+/*================================================
+            @keyframes
+==================================================*/
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes htmlLeft {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(0deg);
+  }
+  18% {
+    transform: rotate(60deg);
+  }
+  100% {
+    transform: rotate(60deg);
+  }
+}
+
+@keyframes htmlRight {
+  0% {
+    transform: rotate(0deg);
+    background: #ffdece;
+  }
+  15% {
+    transform: rotate(180deg);
+    background: #ffdece;
+  }
+  15.01% {
+    transform: rotate(360deg);
+    background: #ff6310;
+  }
+  100% {
+    transform: rotate(360deg);
+    background: #ff6310;
+  }
+}
+
+@keyframes cssLeft {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(0deg);
+  }
+  18% {
+    transform: rotate(60deg);
+  }
+  100% {
+    transform: rotate(60deg);
+  }
+}
+
+@keyframes cssRight {
+  0% {
+    transform: rotate(0deg);
+    background: #ffdece;
+  }
+  15% {
+    transform: rotate(180deg);
+    background: #ffdece;
+  }
+  15.01% {
+    transform: rotate(360deg);
+    background: #048eb7;
+  }
+  100% {
+    transform: rotate(360deg);
+    background: #048eb7;
+  }
+}
+
+@keyframes javascriptRight {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes jqueryLeft {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(0deg);
+  }
+  18% {
+    transform: rotate(60deg);
+  }
+  100% {
+    transform: rotate(60deg);
+  }
+}
+
+@keyframes jqueryRight {
+  0% {
+    transform: rotate(0deg);
+    background: #ffdece;
+  }
+  15% {
+    transform: rotate(180deg);
+    background: #ffdece;
+  }
+  15.01% {
+    transform: rotate(360deg);
+    background: #1068AD;
+  }
+  100% {
+    transform: rotate(360deg);
+    background: #1068AD;
+  }
+}
+
+@keyframes gulpRight {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes sassRight {
+  0% {
+    transform: rotate(0deg);
+    background: #ffdece;
+  }
+  15% {
+    transform: rotate(180deg);
+    background: #ffdece;
+  }
+  15.00001% {
+    transform: rotate(360deg);
+    background: #ce6399;
+  }
+  100% {
+    transform: rotate(360deg);
+    background: #ce6399;
+  }
+}
+
+@keyframes photoshopRight {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(120deg);
+  }
+  100% {
+    transform: rotate(120deg);
+  }
+}
+
+@keyframes illustratorRight {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(120deg);
+  }
+  100% {
+    transform: rotate(120deg);
+  }
+}
+
+@keyframes adobexdRight {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(120deg);
+  }
+  100% {
+    transform: rotate(120deg);
+  }
+}
+
+@keyframes wordpressLeft {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(0deg);
+  }
+  18% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}
+
+@keyframes wordpressRight {
+  0% {
+    transform: rotate(0deg);
+    background: #ffdece;
+  }
+  15% {
+    transform: rotate(180deg);
+    background: #ffdece;
+  }
+  15.01% {
+    transform: rotate(360deg);
+    background: #176d90;
+  }
+  100% {
+    transform: rotate(360deg);
+    background: #176d90;
+  }
+}

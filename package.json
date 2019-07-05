@@ -1,0 +1,23 @@
+{
+    "name": "02_sassbook",
+    "version": "1.0.0",
+    "description": "SASS",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "browser-sync": "^2.26.5",
+        "gulp": "^4.0.0",
+        "gulp-sass": "^4.0.2"
+    },
+    "dependencies": {
+        "gulp-cached": "^1.1.1",
+        "gulp-sass-glob": "^1.0.9",
+        "gulp-watch": "^5.0.1",
+        "node-sass": "^4.12.0"
+    }
+}
