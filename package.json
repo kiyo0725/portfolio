@@ -18,6 +18,6 @@
         "gulp-cached": "^1.1.1",
         "gulp-sass-glob": "^1.0.9",
         "gulp-watch": "^5.0.1",
-        "node-sass": "^4.12.0"
+        "node-sass": "^4.13.1"
     }
 }
